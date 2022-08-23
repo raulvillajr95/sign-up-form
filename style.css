@@ -1,1 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+
+}
+/* Left Bar */
+.left-bar .header-display {
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Right Bar */
+.right-bar form .create-btn {
+  background-color: rgb(130, 151, 228);
+}
+.right-bar form .white-part .form-inputs .left-form input:focus,
+.right-bar form .white-part .form-inputs .right-form input:focus {
+  outline: none;
+  border: 1px solid rgb(79, 79, 223);
+  box-shadow: 2px 2px 10px -2px black;
+
+  background-color: red;
+}
