@@ -1,23 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
-
+  display: flex;
+  background-color: #E5E7EB;
 }
 /* Left Bar */
+.left-bar {
+  width: 40vw;
+  height: 100vh;
+  background-image: url(images/james-dant-F2U9gt7X-no-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
 .left-bar .header-display {
-
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+.left-bar .header-display .header-logo {
+  font-size: 3rem;
+  margin-right: 0.75rem;
+}
+.left-bar .header-display .header-title {
+  font-family: 'Anton';
+  font-size: 3rem;
+}
+.left-bar .unsplash-credits {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 58vh;
+  font-size: 0.75rem;
 }
 
 /* Right Bar */
-.right-bar form .create-btn {
-  background-color: rgb(130, 151, 228);
+.right-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.right-bar .form-desc1 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.right-bar .form-desc2 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.right-bar form {
+  background-color: white;
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.right-bar .form-title {
+  margin-left: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+.right-bar .form-inputs {
+  display: flex;
+}
+.right-bar .left-form {
+  margin-left: 2rem;
+}
+.right-bar form .white-part .form-inputs .left-form input,
+.right-bar form .white-part .form-inputs .right-form input {
+  border: 1px solid #E5E7EB;
 }
 .right-bar form .white-part .form-inputs .left-form input:focus,
 .right-bar form .white-part .form-inputs .right-form input:focus {
   outline: none;
   border: 1px solid rgb(79, 79, 223);
   box-shadow: 2px 2px 10px -2px black;
-
-  background-color: red;
+}
+.right-bar .form-inputs label {
+  font-size: 1rem;
+}
+.right-bar form .create-btn {
+  background-color: rgb(130, 151, 228);
+  margin-left: 2rem;
+}
+.right-bar form .log-in {
+  margin-left: 2rem;
 }
