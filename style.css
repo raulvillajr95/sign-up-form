@@ -37,6 +37,9 @@ body {
   margin-top: 58vh;
   font-size: 0.75rem;
 }
+.left-bar .unsplash-credits a {
+  color: white;
+}
 
 /* Right Bar */
 .right-bar {
@@ -56,10 +59,21 @@ body {
   margin-bottom: 2rem;
   margin-left: 2rem;
 }
+.right-bar .form-desc1 em,
+.right-bar .form-desc2 em {
+  font-style: italic;
+}
 .right-bar form {
-  background-color: white;
   width: 60vw;
-  height: 30vh;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.right-bar .white-part {
+  background-color: white;
+  height: 33vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -67,18 +81,35 @@ body {
 }
 .right-bar .form-title {
   margin-left: 2rem;
-  margin-bottom: 0.75rem;
   font-size: 1.25rem;
 }
 .right-bar .form-inputs {
   display: flex;
+  width: 60vw;
+  height: 17vh;
 }
 .right-bar .left-form {
   margin-left: 2rem;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-bar .form-inputs label {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+.right-bar .right-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .right-bar form .white-part .form-inputs .left-form input,
 .right-bar form .white-part .form-inputs .right-form input {
   border: 1px solid #E5E7EB;
+  width: 15rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
 }
 .right-bar form .white-part .form-inputs .left-form input:focus,
 .right-bar form .white-part .form-inputs .right-form input:focus {
@@ -86,13 +117,37 @@ body {
   border: 1px solid rgb(79, 79, 223);
   box-shadow: 2px 2px 10px -2px black;
 }
-.right-bar .form-inputs label {
-  font-size: 1rem;
+.right-bar .passw1-bundle {
+  position: relative;
+}
+.right-bar .match-error {
+  font-size: .7rem;
+  color: red;
+  position: absolute;
+  visibility: hidden;
+  bottom: -17px
 }
 .right-bar form .create-btn {
-  background-color: rgb(130, 151, 228);
+  background-color: rgb(79, 79, 223);
   margin-left: 2rem;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-style: none;
+  border-radius: 0.35rem;
+  color: white;
+}
+.right-bar form .create-btn:hover {
+  background-color: rgb(130, 151, 228);
+  transition: 0.10s;
 }
 .right-bar form .log-in {
   margin-left: 2rem;
+  font-size: 0.9rem;
+}
+.right-bar form .log-in a {
+  text-decoration: none;
+  color: rgb(79, 79, 223);
 }

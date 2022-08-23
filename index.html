@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -26,30 +27,31 @@
           <div class="form-inputs">
             <div class="left-form">
               <div class="fn-bundle">
-                <label for="">FIRST NAME</label><br>
-                <input type="text" name="" id="">
+                <label for="fname">FIRST NAME</label><br>
+                <input type="text" name="fname" id="fname" required>
               </div>
               <div class="email-bundle">
-                <label for="">EMAIL</label><br>
-                <input type="email" name="" id="">
+                <label for="email">EMAIL</label><br>
+                <input type="email" name="email" id="email" required>
               </div>
               <div class="passw1-bundle">
-                <label for="">PASSWORD</label><br>
-                <input type="password" name="" id="">
+                <label for="password1">PASSWORD</label><br>
+                <input type="password" name="password1" class="error pass1" required><br>
+                <span class="match-error">* Passwords do not match</span>
               </div>
             </div>
             <div class="right-form">
               <div class="ln-bundle">
-                <label for="">LAST NAME</label><br>
-                <input type="text" name="" id="">
+                <label for="lname">LAST NAME</label><br>
+                <input type="text" name="lname" id="lname" required>
               </div>
               <div class="pn-bundle">
-                <label for="">PHONE NUMBER</label><br>
-                <input type="tel" name="" id="">
+                <label for="tel">PHONE NUMBER</label><br>
+                <input type="tel" name="tel" id="tel">
               </div>
               <div class="passw2-bundle">
-                <label for="">CONFIRM PASSWORD</label><br>
-                <input type="password" name="" id="">
+                <label for="password2">CONFIRM PASSWORD</label><br>
+                <input type="password" name="password2" class="error pass2" required>
               </div>
             </div>
           </div>
@@ -62,6 +64,8 @@
 </html>
 
 <!-- 
+-add italics to desc
+
 -make it look like the design
 -validate each individual field
 -validate that passwords match
